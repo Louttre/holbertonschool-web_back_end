@@ -15,4 +15,5 @@ export default class HolbertonCourse {
     this._name = name;
     this._legnth = length;
     this._students = students;
-  };
+  }
+}
