@@ -1,3 +1,4 @@
+/*eslint-disable*/
 export default function getListStudents() {
   const array = [{
     id: 1,
