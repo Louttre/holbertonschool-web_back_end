@@ -2,7 +2,7 @@
 export default function getListStudents() {
   const array = [{
     id: 1,
-    fisrstname: 'Guillaume',
+    firstname: 'Guillaume',
     location: 'San Francisco'
   }, {
     id: 2,
