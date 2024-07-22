@@ -13,4 +13,5 @@ export default function getListStudents() {
     location: 'San Francisco'
   }]
 
-return new_array = array.map((person) => ({ id: person.id, firsname: person.firstname, location: person.location }))
+  let new_array = array.map(person => ({ id: person.id, firsname: person.firstname, location: person.location }));
+}
