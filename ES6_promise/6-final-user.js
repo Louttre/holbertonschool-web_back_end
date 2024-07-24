@@ -10,7 +10,4 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       return {
         status: result.status,
         value: result.status === 'fulfilled' ? result.value : result.reason
-      };
-    });
-  });
-}
+      }})})};
