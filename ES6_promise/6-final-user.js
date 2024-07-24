@@ -10,4 +10,4 @@ function handleProfileSignup(firstName, lastName, fileName) {
     return results.map((result) => ({
       status: result.status,
       value: result.status === 'fulfilled' ? result.result : result.reason,
-    })));
+    }))}};
