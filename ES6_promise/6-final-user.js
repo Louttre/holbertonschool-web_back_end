@@ -10,5 +10,5 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     return results.map(result => {
       return {
         status: result.status,
-        value: result.status === 'fulfilled' ? result.value : result.reason
+        value: result.status === 'fulfilled' ? result.value : result.reason.message
       }})})};
