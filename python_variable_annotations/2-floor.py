@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 
-def floor(str1: float) -> int:
+def floor(n: float) -> int:
     return int(str1)
