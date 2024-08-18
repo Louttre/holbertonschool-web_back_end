@@ -2,6 +2,7 @@
 """module"""
 from typing import List
 
+
 def sum_mixed_list(mxd_lst: list[float | int]) -> float:
     """
     Sums all the numbers in a list containing both integers and floating-point numbers, 
