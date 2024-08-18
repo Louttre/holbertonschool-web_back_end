@@ -3,11 +3,10 @@
 from typing import Callable
 
 
-
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
-    Creates a multiplier function that mu
-    ltiplies its input by a specified value.
+    Creates a multiplier function that multiplies
+    its input by a specified value.
 
     Parameters:
     multiplier (float): The value by w
