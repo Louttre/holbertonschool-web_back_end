@@ -10,11 +10,13 @@ def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     and returns the total as a float.
 
     Parameters:
-    mxd_lst (list[float | int]): A list of numbers, which can include both 
+    mxd_lst (list[float | int]): A list of
+    numbers, which can include both 
     integers and floating-point values.
 
     Returns:
-    float: The sum of all numbers in the input list, returned as a float.
+    float: The sum of all numbers in the
+    input list, returned as a float.
     """
     i = 0
     for num in mxd_lst:
