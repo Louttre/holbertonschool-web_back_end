@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """module"""
+from typing import List
 
 
 def sum_list(input_list: list[float]) -> float:
@@ -13,7 +14,4 @@ def sum_list(input_list: list[float]) -> float:
     float: The sum of all numbers in the input list.
     """
 
-    i = 0
-    for num in input_list:
-        i += num
-    return i
+    return sum(input_list)
