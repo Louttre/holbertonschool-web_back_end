@@ -3,7 +3,7 @@
 from typing import List
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: typing.List[float]) -> float:
     """
     Sums all the floating-point numbers in a list and returns the total.
 
