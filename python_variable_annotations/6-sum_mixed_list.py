@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """module"""
-from typing import List
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[float | int]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[float | int]]) -> float:
     """
     Sums all the numbers in a list containing both integers and floating-point numbers, 
     and returns the total as a float.
