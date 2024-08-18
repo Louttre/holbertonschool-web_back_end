@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """module"""
 
+
 a: int = 1
 """
 a (int): An integer variable representing the value 1.
