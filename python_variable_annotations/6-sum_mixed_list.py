@@ -11,7 +11,7 @@ def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
 
     Parameters:
     mxd_lst (list[float | int]): A list of
-    numbers, which can include both 
+    numbers, which can include both
     integers and floating-point values.
 
     Returns:
