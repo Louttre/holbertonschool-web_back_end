@@ -4,9 +4,10 @@
 
 def floor(n: float) -> int:
     """
-    Returns the largest integer less than or equal to the given floating-point number.
+    Returns the largest
 
-    This function converts the given float to an integer by truncating the decimal part,
+    This function converts the given float to an integer 
+    by truncating the decimal part,
     effectively rounding down towards zero.
 
     Parameters:
