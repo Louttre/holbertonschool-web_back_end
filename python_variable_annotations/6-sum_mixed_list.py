@@ -5,7 +5,8 @@ from typing import List, Union
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
-    Sums all the numbers in a list containing both integers and floating-point numbers, 
+    Sums all the numbers in a list containing
+    both integers and floating-point numbers,
     and returns the total as a float.
 
     Parameters:
