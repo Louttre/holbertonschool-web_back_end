@@ -6,14 +6,17 @@ def floor(n: float) -> int:
     """
     Returns the largest
 
-    This function converts the given float to an integer 
+    This function converts the given
+    float to an integer 
     by truncating the decimal part,
     effectively rounding down towards zero.
 
     Parameters:
-    n (float): The floating-point number to be floored.
+    n (float): The floating-point number
+    to be floored.
 
     Returns:
-    int: The largest integer less than or equal to the input number.
+    int: The largest integer less than
+    or equal to the input number.
     """
     return int(n)
