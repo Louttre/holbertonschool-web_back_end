@@ -3,7 +3,7 @@
 from typing import List
 
 
-def sum_mixed_list(mxd_lst: list[float | int]) -> float:
+def sum_mixed_list(mxd_lst: List[float | int]) -> float:
     """
     Sums all the numbers in a list containing both integers and floating-point numbers, 
     and returns the total as a float.
