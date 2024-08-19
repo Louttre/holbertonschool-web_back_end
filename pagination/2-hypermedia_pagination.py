@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Dict, List, Optional, Tuple
 import csv
 import math
 from typing import List
