@@ -7,7 +7,7 @@ from typing import List
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def print_yielded_values() -> List[float]:
+async def async_comprehension() -> List[float]:
     """
     Asynchronous function that collects values
     yielded by async_generator
