@@ -2,8 +2,7 @@
 """module"""
 import asyncio
 import time
-from random import random
-
+from random import uniform
 
 async def async_generator():
     """
