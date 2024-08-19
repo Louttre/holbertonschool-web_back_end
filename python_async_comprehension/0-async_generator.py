@@ -4,7 +4,7 @@ import asyncio
 import time
 from random import uniform
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """
     An asynchronous generator that yields a random number between 0 and 10.
 
