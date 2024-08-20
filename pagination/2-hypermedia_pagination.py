@@ -34,6 +34,9 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        Get a specific page of the dataset.
+        """
         assert isinstance(page, int) and page > 0, "Page should be a positive integer"
         assert isinstance(page_size, int) and page_size > 0, "Page_size should be a positive integer"
         dataset = self.dataset()
@@ -43,6 +46,9 @@ class Server:
         return dataset[start_index:end_index]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Optional[int]]:
+        """
+        Get a page of the dataset with hypermedia metadata.
+        """
         dataset = self.dataset()
         page_data = self.get_page(page, page_size)
         total_data = len(dataset)
