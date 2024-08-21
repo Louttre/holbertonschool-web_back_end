@@ -12,4 +12,4 @@ async def async_comprehension() -> List[float]:
     yielded by async_generator
     into a list and then prints that list.
     """
-    return result = [i async for i in async_generator()]
+    return [i async for i in async_generator()]
