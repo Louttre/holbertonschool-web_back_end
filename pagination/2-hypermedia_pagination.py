@@ -56,7 +56,7 @@ class Server:
               'prev_page': prev_page,
               'total_pages': total_pages
         }
-        
+
 
     def index_range(page: int, page_size: int) -> Tuple[int, int]:
         """
