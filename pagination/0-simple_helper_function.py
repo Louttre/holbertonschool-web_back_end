@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-from typing import Tuple
 """module"""
+from typing import Tuple
+
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -8,6 +9,4 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
     Calculate the start and end indices
     for a given page and page size in pagination.
     """
-    idx = page * page_size - page_size
-    index = page * page_size
-    return (idx, index)
+    return ((page - 1) * page_size, page * page_size)
