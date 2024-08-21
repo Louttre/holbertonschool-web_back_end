@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
-""" module """
+#!/usr/bin/env python3
+""" Write a Python script that provides some stats about
+    Nginx logs stored in MongoDB
+"""
 from pymongo import MongoClient
 
+if __name__ == "__main__":
+    """ Database: logs
+        Collection: nginx
+    """
 
 client = MongoClient("mongodb://localhost:27017/")
 db = client.logs
