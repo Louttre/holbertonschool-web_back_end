@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""module"""
-from typing import Dict, List, Optional, Tuple
+''' Hypermedia pagination '''
 import csv
 import math
-from typing import List
+from typing import Dict, List, Tuple
 
 
 class Server:
@@ -26,36 +25,36 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """
-        Get a specific page of the dataset.
-        """
-        assert isinstance(page, int) and page > 0, "Page should be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page_size should be a positive integer"
-        dataset = self.dataset()
-        start_index, end_index = index_range(page, page_size)
-        if start_index >= len(dataset):
+        ''' def get page '''
+        assert type(page_size) is int and type(page) is int
+        assert page > 0
+        assert page_size > 0
+        self.dataset()
+        i = index_range(page, page_size)
+        if i[0] >= len(self.__dataset):
             return []
-        return dataset[start_index:end_index]
+        else:
+            return self.__dataset[i[0]:i[1]]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Optional[int]]:
-        """
-        Get a page of the dataset with hypermedia metadata.
-        """
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+        ''' Def get hyper '''
         dataset_items = len(self.dataset())
         data = self.get_page(page, page_size)
         total_pages = math.ceil(dataset_items / page_size)
-        return {
+
+        p = {
             "page": page,
             "page_size": page_size if page < total_pages else 0,
             "data": data,
             "next_page": page + 1 if page + 1 < total_pages else None,
             "prev_page": page - 1 if page - 1 > 0 else None,
             "total_pages": total_pages
-        }
+            }
+        return p
 
-    def index_range(page: int, page_size: int) -> Tuple[int, int]:
-        """
-        Calculate the start and end indices
-        for a given page and page size in pagination.
-        """
-        return ((page - 1) * page_size, page * page_size)
+
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    ''' Def index range '''
+    index = page * page_size - page_size
+    index_1 = index + page_size
+    return (index, index_1)
