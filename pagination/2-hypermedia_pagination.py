@@ -41,13 +41,9 @@ class Server:
         """
         Get a page of the dataset with hypermedia metadata.
         """
-        dataset = self.dataset()
-        page_data = self.get_page(page, page_size)
-        total_data = len(dataset)
-        start_index, end_index = index_range(page, page_size)
-        next_page = page + 1 if end_index < total_data else None
-        prev_page = page - 1 if page > 1 else None
-        total_pages = math.ceil(total_data / page_size)
+        dataset_items = len(self.dataset())
+        data = self.get_page(page, page_size)
+        total_pages = math.ceil(dataset_items / page_size)
         return {
               'page_size': len(page_data),
               'page': page,
