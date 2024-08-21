@@ -5,6 +5,7 @@
 """
 from pymongo import MongoClient
 
+
 if __name__ == "__main__":
     """ Database: logs
         Collection: nginx
@@ -17,7 +18,7 @@ mongo_collection = db.nginx
 
 method = ["GET", "POST", "PUT", "PATCH", "DELETE"]
 print(f'{mongo_collection.count_documents()} logs')
-print("Methods :")
+print("Methods:")
 for met in method:
     count = mongo_collection.count_documents({ "method": met })
     print(f'\tmethod {met}: {count}')
