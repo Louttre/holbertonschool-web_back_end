@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 
 client = MongoClient("mongodb://localhost:27017/")
-db = client.lgos
+db = client.logs
 mongo_collection = db.nginx
 
 
