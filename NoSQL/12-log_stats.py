@@ -9,7 +9,7 @@ if __name__ == "__main__":
         Collection: nginx
     """
 
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient('mongodb://127.0.0.1:27017')
     mongo_collection = client.logs.nginx
     method = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print(f'{mongo_collection.count_documents()} logs')
